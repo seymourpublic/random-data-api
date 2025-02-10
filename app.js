@@ -8,8 +8,15 @@ const customRoutes = require("./src/routes/customRoutes");
 
 const app = express();
 
+// CORS Configuration
+const corsOptions = {
+    origin: process.env.ALLOWED_ORIGINS || "*",
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+};
+app.use(cors(corsOptions));
+
 // Middleware
-app.use(cors());
 app.use(express.json());
 
 // Routes
