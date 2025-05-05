@@ -12,7 +12,7 @@ The **Random Data Generator API** provides fake data for testing and development
 ## 🏗️ Setup & Installation
 ### 1️⃣ Clone the repository
 ```sh
-git clone https://github.com/yourusername/random-data-api.git
+git clone https://github.com/seymourpublic/random-data-api.git
 cd random-data-api
 ```
 
